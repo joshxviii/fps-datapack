@@ -1,1 +1,1 @@
-# guns-datapack
+# FPS datapack for minecraft
