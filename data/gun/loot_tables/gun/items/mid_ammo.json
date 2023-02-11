@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:arrow",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ammo_type:\"medium\",Ammo:1b,Charged:1b,HideFlags:31,CustomModelData:101,display:{Name:'[{\"text\":\"Special Ammo\",\"italic\":\"false\",\"color\":\"gold\"}]'}}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

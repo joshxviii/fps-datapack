@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Sword:1b,Unbreakable:0b,weapon_damage:15,weapon_type:\"Katana\",HideFlags:31,CustomModelData:200,AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:3.0,Operation:0,UUID:[I;11,11,11,11]},{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:15.0,Operation:0,UUID:[I;11,11,11,11]},{Slot:\"offhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:15.0,Operation:0,UUID:[I;11,11,11,11]}],display:{Name:'[{\"text\":\"Katana\",\"italic\":\"false\",\"color\":\"white\"}]',Lore:['[{\"text\":\"\"}]','[{\"text\":\"When in Main Hand:\",\"italic\":\"false\",\"color\":\"gray\"}]','[{\"text\":\" 15 Attack Damage\",\"italic\":\"false\",\"color\":\"dark_green\"}]','[{\"text\":\" 3 Attack Speed\",\"italic\":\"false\",\"color\":\"dark_green\"}]']}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

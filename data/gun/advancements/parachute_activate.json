@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:fall_from_height",
+      "conditions": {
+        "player": [],
+        "distance": {
+          "y": 4
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "gun:tick/armor/parachute_start"
+  }
+}

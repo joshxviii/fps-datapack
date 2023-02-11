@@ -1,0 +1,4 @@
+{
+  "function": "set_nbt",
+  "tag": "{Aim:1b,CustomModelData:107,AttributeModifiers:[{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:-0.05,Operation:0.1,UUID:[I;42853,1689024593,-201178,-1559272105]}]}"
+}

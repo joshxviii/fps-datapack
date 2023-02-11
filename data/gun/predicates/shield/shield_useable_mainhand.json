@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "equipment": {
+      "mainhand": {
+        "items": [
+          "minecraft:shield"
+        ],
+        "durability": {
+          "min": 10,
+          "max": 336
+        }
+      }
+    }
+  }
+}

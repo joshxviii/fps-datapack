@@ -1,0 +1,69 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:leather_leggings",
+                    "conditions": [
+                        {
+                            "condition": "entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "team": 0
+                            }
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CombatSuit:1b,Hiding:0b,Unbreakable:1b,HideFlags:68,CustomModelData:201,display:{color:7631988,Name:'[{\"text\":\"Combat Uniform\",\"italic\":\"false\",\"color\":\"white\"}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:4,Operation:0,Slot:feet,Name:\"generic.armor\",UUID:[I;-12179,36717,21512,-73574]}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:leather_leggings",
+                    "conditions": [
+                        {
+                            "condition": "entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "team": 1
+                            }
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CombatSuit:1b,Hiding:0b,Unbreakable:1b,HideFlags:68,CustomModelData:201,display:{color:16726081,Name:'[{\"text\":\"Combat Uniform\",\"italic\":\"false\",\"color\":\"white\"}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:4,Operation:0,Slot:feet,Name:\"generic.armor\",UUID:[I;-12179,36717,21512,-73574]}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:leather_leggings",
+                    "conditions": [
+                        {
+                            "condition": "entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "team": 2
+                            }
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CombatSuit:1b,Hiding:0b,Unbreakable:1b,HideFlags:68,CustomModelData:201,display:{color:3697663,Name:'[{\"text\":\"Combat Uniform\",\"italic\":\"false\",\"color\":\"white\"}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:4,Operation:0,Slot:feet,Name:\"generic.armor\",UUID:[I;-12179,36717,21512,-73574]}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

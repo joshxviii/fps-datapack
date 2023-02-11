@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:crossbow",
+                    "functions": [
+						{
+						"function": "set_damage",
+                        "damage": 1
+						},
+						{
+                            "function": "set_nbt",
+                            "tag": "{Gun:1b,Aim:0b,Shoots:1b,fire_rate:18,weapon_damage:3,weapon_type:\"M13\",ammo_type:\"medium\",Unbreakable:0b,HideFlags:31,Charged:1b,ChargedProjectiles:[{Ammo:1b}],Enchantments:[{id:quick_charge,lvl:2}],CustomModelData:106,display:{Name:'[{\"text\":\"M13\",\"italic\":\"false\",\"color\":\"white\"}]',Lore:['[{\"text\":\"\"}]','[{\"text\":\"When in Main Hand:\",\"italic\":\"false\",\"color\":\"gray\"}]','[{\"text\":\" 3 Bullet Damage\",\"italic\":\"false\",\"color\":\"dark_green\"}]','[{\"text\":\" 2.1 Fire Rate\",\"italic\":\"false\",\"color\":\"dark_green\"}]','[{\"text\":\" Ammo Type: \",\"italic\":\"false\",\"color\":\"dark_green\"},{\"text\":\"Special\",\"italic\":\"false\",\"color\":\"gold\"}]']}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

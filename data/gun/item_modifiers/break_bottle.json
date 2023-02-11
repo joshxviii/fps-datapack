@@ -1,0 +1,4 @@
+{
+  "function": "set_nbt",
+  "tag": "{Meele:1b,Glass:0b,HideFlags:31,CustomModelData:101,Count:1b,BlockStateTag:{north:\"false\",south:\"false\",east:\"false\",west:\"false\"},AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-0.5,Operation:1,UUID:[I;11,11,11,11]},{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:4.0,Operation:0,UUID:[I;11,11,11,11]}],display:{Name:'[{\"text\":\"Broken Glass Bottle\",\"italic\":\"false\",\"color\":\"white\"}]',Lore:['[{\"text\":\"\"}]','[{\"text\":\"When in Main Hand:\",\"italic\":\"false\",\"color\":\"gray\"}]','[{\"text\":\" 4 Attack Damage\",\"italic\":\"false\",\"color\":\"dark_green\"}]','[{\"text\":\" 1.9 Attack Speed\",\"italic\":\"false\",\"color\":\"dark_green\"}]']}}"
+}

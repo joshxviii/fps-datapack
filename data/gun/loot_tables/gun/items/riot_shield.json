@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Shield:1b,Unbreakable:0b,HideFlags:31,CustomModelData:100,display:{Name:'[{\"text\":\"Riot Shield\",\"italic\":\"false\",\"color\":\"white\"}]'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

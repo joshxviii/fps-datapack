@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+  	"#minecraft:skeletons",
+	"minecraft:skeleton_horse",
+	"minecraft:slime",
+	"minecraft:snow_golem",
+    "minecraft:boat",
+	"minecraft:minecart",
+	"minecraft:command_block_minecart",
+	"minecraft:chest_minecart",
+	"minecraft:furnace_minecart",
+	"minecraft:spawner_minecart",
+	"minecraft:tnt_minecart",
+	"minecraft:leash_knot",
+	"minecraft:armor_stand",
+	"minecraft:shulker_bullet"
+  ]
+}

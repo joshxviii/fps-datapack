@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:spyglass",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Unbreakable:1b,HideFlags:31,Enchantments:[{}],CustomModelData:100,display:{Name:'[{\"text\":\"Binoculars\",\"italic\":\"false\",\"color\":\"white\"}]'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

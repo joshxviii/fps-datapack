@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:armor_stand",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:300,EntityTag:{Marker:1b,Small:1b,Tags:[\"turret\",\"spawn_turret\"],DisabledSlots:2039575,Invisible:1b,Silent:1b,Invulnerable:1b},display:{Name:'[{\"text\":\"Turret Crate\",\"italic\":\"false\",\"color\":\"white\"}]'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

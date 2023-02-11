@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:item",
+	"minecraft:item_frame",
+	"minecraft:glow_item_frame",
+	"#minecraft:arrows",
+	"minecraft:area_effect_cloud",
+	"minecraft:tnt",
+	"minecraft:dragon_fireball",
+	"minecraft:egg",
+	"minecraft:snowball",
+	"minecraft:end_crystal",
+	"minecraft:ender_pearl",
+	"minecraft:falling_block",
+	"minecraft:experience_bottle",
+	"minecraft:experience_orb",
+	"minecraft:firework_rocket",
+	"minecraft:furnace_minecart",
+	"minecraft:llama_spit",
+	"minecraft:fireball",
+	"minecraft:small_fireball",
+	"minecraft:painting",
+	"minecraft:potion",
+	"minecraft:armor_stand",
+	"minecraft:enderman"
+  ]
+}
