@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:crossbow",
+                    "functions": [
+						{
+						"function": "set_damage",
+                        "damage": 1
+						},
+						{
+                            "function": "set_nbt",
+                            "tag": "{Gun:1b,Aim:0b,Shoots:1b,upgradable:0b,xp:0,fire_rate:6,weapon_damage:4,weapon_type:\"AK\",ammo_type:\"medium\",Unbreakable:0b,HideFlags:31,Charged:1b,ChargedProjectiles:[{Ammo:1b}],Enchantments:[{id:quick_charge,lvl:3}],CustomModelData:2102,display:{Name:'[{\"text\":\"AK-47\",\"italic\":\"false\",\"color\":\"white\"}]',Lore:['[{\"text\":\"\"}]','[{\"text\":\"When in Main Hand:\",\"italic\":\"false\",\"color\":\"gray\"}]','[{\"text\":\" 3 Bullet Damage\",\"italic\":\"false\",\"color\":\"dark_green\"}]','[{\"text\":\" 2.4 Fire Rate\",\"italic\":\"false\",\"color\":\"dark_green\"}]','[{\"text\":\" Ammo Type: \",\"italic\":\"false\",\"color\":\"dark_green\"},{\"text\":\"Special\",\"italic\":\"false\",\"color\":\"gold\"}]']},AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-10.0,Operation:0,UUID:[I;11,11,11,11]}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

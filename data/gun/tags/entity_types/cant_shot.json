@@ -23,6 +23,11 @@
 	"minecraft:painting",
 	"minecraft:potion",
 	"minecraft:armor_stand",
+	"minecraft:marker",
+	"minecraft:text_display",
+	"minecraft:item_display",
+	"minecraft:block_display",
+	"minecraft:interaction",
 	"minecraft:enderman"
   ]
 }

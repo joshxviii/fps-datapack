@@ -1,3 +1,3 @@
-tp @a 0 25 0
-time set noon
-gamemode adventure @a
+clear @s
+tp @s 0.0 25 0.0
+spawnpoint @s 0 25 0

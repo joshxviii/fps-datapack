@@ -10,6 +10,7 @@ execute as @e[type=minecraft:area_effect_cloud,tag=projectile] at @s unless bloc
 execute as @e[type=minecraft:area_effect_cloud,tag=projectile] at @s positioned ~ ~ ~ if entity @e[dx=0,type=!#gun:cant_shot] positioned ~-.90 ~-.90 ~-.90 if entity @e[dx=0,type=!#gun:cant_shot] run tag @s add has_hit
 
 
+
 execute as @e[type=minecraft:area_effect_cloud,tag=projectile] at @s if entity @s[tag=has_hit] run function gun:update/explode
 execute as @e[type=minecraft:area_effect_cloud,tag=projectile] at @s if entity @s[tag=has_hit] run kill @s
 

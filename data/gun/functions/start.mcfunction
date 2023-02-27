@@ -1,1 +1,1 @@
-tellraw @a ["",{"text":"[v0.0]","bold":false,"color":"gray"},{"text":" Gun:","bold":false,"color":"gold"},{"text":" Installed","bold":false,"color":"yellow"}]
+tellraw @a ["",{"text":"[v0.0]","bold":false,"color":"gray"},{"text":" FPSDatapack:","bold":false,"color":"gold","hoverEvent":{"action":"show_text","value":"Github Link"},"clickEvent":{"action":"open_url","value":"https://github.com/joshxviii/fps-datapack"}},{"text":" Installed","bold":false,"color":"yellow"}]

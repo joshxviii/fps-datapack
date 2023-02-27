@@ -1,4 +1,3 @@
-execute if entity @s[scores={hold_fire=1}] run function gun:update/check_fire_start
-execute if entity @s[scores={hold_fire=2},tag=has_m13] run function gun:update/check_fire_start
+execute as @a if score @s rapid_fire matches 0.. at @s run function gun:update/delay_tick_1t
 
-scoreboard players remove @s hold_fire 1
+execute as @a if score @s rapid_fire matches 0.. run schedule function gun:update/rapid_fire 1t

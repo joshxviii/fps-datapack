@@ -13,7 +13,9 @@ execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{Gun:1b}}]}] run item modif
 execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{Gun:1b}}]}] run item modify entity @s weapon.offhand gun:blaster_swtich_1
 execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{Gun:1b}}]}] at @s run item replace entity @e[type=armor_stand,tag=gun_unload,limit=1,sort=nearest,distance=..0.1] weapon.mainhand from entity @s weapon.mainhand
 execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{Gun:1b}}]}] run item replace entity @s weapon.mainhand from entity @s weapon.offhand
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{Gun:1b}}]}] unless score @s cool_down_time matches 1.. run function gun:update/unload
 execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{Gun:1b}}]}] at @s run item replace entity @s weapon.offhand from entity @e[type=armor_stand,tag=gun_unload,limit=1,sort=nearest,distance=..0.1] weapon.mainhand
 execute run kill @e[type=armor_stand,tag=gun_unload]
+
 
 advancement revoke @s only gun:inventory_change

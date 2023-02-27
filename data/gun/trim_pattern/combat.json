@@ -1,0 +1,7 @@
+{
+  "asset_id": "gun:combat",
+  "description": {
+    "translate": "trim_pattern.gun.combat"
+  },
+  "template_item": "minecraft:book"
+}

@@ -2,6 +2,7 @@ scoreboard objectives remove use_gun
 scoreboard objectives remove fire_gun
 scoreboard objectives remove use_gun_2
 scoreboard objectives remove use_vehicle
+scoreboard objectives remove use_grapple
 scoreboard objectives remove charge_test
 scoreboard objectives remove charge_time
 scoreboard objectives remove missle_dir_x
@@ -10,6 +11,7 @@ scoreboard objectives remove missle_dir_z
 scoreboard objectives remove gernade_dir_x
 scoreboard objectives remove gernade_dir_y
 scoreboard objectives remove gernade_dir_z
+scoreboard objectives remove rapid_fire
 scoreboard objectives remove hold_fire
 scoreboard objectives remove ammo
 scoreboard objectives remove cool_down_time
@@ -17,7 +19,7 @@ scoreboard objectives remove model_id
 scoreboard objectives remove dropped_time
 scoreboard objectives remove damage
 scoreboard objectives remove health
-scoreboard objectives remove def armor
+scoreboard objectives remove def
 scoreboard objectives remove def_shot
 scoreboard objectives remove current_health
 
@@ -54,10 +56,19 @@ scoreboard objectives remove 360
 
 scoreboard objectives remove 465
 
+scoreboard objectives remove scoreboard
+
+scoreboard objectives remove red.blue
+
+scoreboard objectives remove 60
+scoreboard objectives remove timer
+scoreboard objectives remove timer_s
+scoreboard objectives remove timer_m
 
 scoreboard objectives remove uuid_1
 scoreboard objectives remove owner_id
 scoreboard objectives remove attacker_id
+scoreboard objectives remove passenger_id
 scoreboard objectives remove id_test
 scoreboard objectives remove player_count
 scoreboard objectives remove player_sort
@@ -82,11 +93,10 @@ scoreboard objectives remove dash_time
 
 
 team remove noname
-
+team remove ffa
 
 
 scoreboard objectives remove points
-
 scoreboard objectives remove kill
 
 scoreboard objectives remove team
@@ -101,7 +111,12 @@ scoreboard objectives remove blue_kills
 
 
 
-
+scoreboard objectives remove grap_mot_x
+scoreboard objectives remove grap_mot_y
+scoreboard objectives remove grap_mot_z
+scoreboard objectives remove grap_mot2_x
+scoreboard objectives remove grap_mot2_y
+scoreboard objectives remove grap_mot2_z
 
 scoreboard objectives remove target_healthmax
 scoreboard objectives remove target_health

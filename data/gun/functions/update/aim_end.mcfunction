@@ -8,3 +8,5 @@ execute as @s[tag=has_sniper] run item modify entity @s weapon.mainhand gun:aimm
 execute as @s[tag=has_m13] run item modify entity @s weapon.mainhand gun:aimming/m13_end
 execute as @s[tag=has_rpg] run item modify entity @s weapon.mainhand gun:aimming/rpg_end
 execute as @s run item modify entity @s weapon.mainhand gun:gun_aim_end
+
+tag @s remove aimming

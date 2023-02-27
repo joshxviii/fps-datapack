@@ -1,12 +1,12 @@
-execute as @e[tag=sonar_1] at @s if block ~ ~ ~ #gun:shot_past run kill @e[tag=sonar,limit=2,sort=nearest,distance=..1]
+execute as @e[tag=sonar_1] at @s if block ~ ~ ~ #gun:shot_past run kill @e[tag=sonar,limit=3,sort=nearest,distance=..1]
 
-execute as @e[type=ender_pearl,tag=sonar_3] at @s run data merge entity @s {Age:0}
+execute as @e[type=area_effect_cloud,tag=sonar_3] at @s run data merge entity @s {Age:0}
 
-scoreboard players add @e[type=ender_pearl,tag=sonar_3] point_rotation 10
-scoreboard players operation @e[type=ender_pearl,tag=sonar_3] point_rotation %= 180 180
-execute as @e[type=ender_pearl,tag=sonar_3] store result entity @s Rotation[0] float 1 run scoreboard players get @s point_rotation
-execute as @e[type=armor_stand,tag=sonar_1] at @s rotated as @e[type=ender_pearl,tag=sonar_3,limit=1,sort=nearest] positioned ~ ~-3 ~ rotated ~90 ~ positioned ^5 ^ ^ run function gun:update/capture_zone_2
-execute as @e[type=armor_stand,tag=sonar_1] at @s rotated as @e[type=ender_pearl,tag=sonar_3,limit=1,sort=nearest] positioned ~ ~-3 ~ rotated ~90 ~ positioned ^-5 ^ ^ run function gun:update/capture_zone_2
+scoreboard players add @e[type=area_effect_cloud,tag=sonar_3] point_rotation 10
+scoreboard players operation @e[type=area_effect_cloud,tag=sonar_3] point_rotation %= 180 180
+execute as @e[type=area_effect_cloud,tag=sonar_3] store result entity @s Rotation[0] float 1 run scoreboard players get @s point_rotation
+execute as @e[type=armor_stand,tag=sonar_1] at @s rotated as @e[type=area_effect_cloud,tag=sonar_3,limit=1,sort=nearest] positioned ~ ~-3 ~ rotated ~90 ~ positioned ^5 ^ ^ run function gun:update/capture_zone_2
+execute as @e[type=armor_stand,tag=sonar_1] at @s rotated as @e[type=area_effect_cloud,tag=sonar_3,limit=1,sort=nearest] positioned ~ ~-3 ~ rotated ~90 ~ positioned ^-5 ^ ^ run function gun:update/capture_zone_2
 
 bossbar set minecraft:point_a players
 bossbar set minecraft:point_b players

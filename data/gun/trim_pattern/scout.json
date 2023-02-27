@@ -1,0 +1,7 @@
+{
+  "asset_id": "gun:scout",
+  "description": {
+    "translate": "trim_pattern.gun.scout"
+  },
+  "template_item": "minecraft:book"
+}

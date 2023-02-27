@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "gun:tick/gernade"
+    "function": "gun:update/gernade"
   }
 }

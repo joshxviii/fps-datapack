@@ -1,0 +1,9 @@
+{
+  "asset_name": "team_red",
+  "description": {
+    "color": "#ED0000",
+    "translate": "trim_material.gun.team_red"
+  },
+  "ingredient": "minecraft:book",
+  "item_model_index": 0.8
+}

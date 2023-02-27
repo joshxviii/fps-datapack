@@ -1,8 +1,8 @@
 execute as @a[scores={crawl_time=1..}] run function gun:tick/crawl/crawl_1
 
-execute as @a[scores={use_gernade=1..}] at @s run function gun:tick/gernade
+execute as @a[scores={use_gernade=1..}] at @s run function gun:update/gernade
 
-
+execute as @a[scores={died=1..}] at @s run function gun:update/respawn
 
 
 
@@ -16,10 +16,10 @@ execute as @a[scores={ammo=1..},nbt={SelectedItem:{tag:{Shoots:1b,Charged:0b}}}]
 execute as @a[nbt={SelectedItem:{tag:{Shoots:1b,Charged:1b,Aim:0b}}},predicate=gun:sneaking] run function gun:update/aim_start
 execute as @a[nbt={SelectedItem:{tag:{Shoots:1b,Aim:1b}}}] unless entity @s[predicate=gun:sneaking,nbt={SelectedItem:{tag:{Charged:1b}}}] run function gun:update/aim_end
 
+execute as @a[scores={cool_down_time=1..}] unless score @s ammo matches ..0 unless entity @s[tag=aimming] run function gun:update/cooldown_start
 
 
-execute as @a[scores={cool_down_time=1..}] run scoreboard players remove @s cool_down_time 1
-execute as @a[scores={cool_down_time=0}] run tag @s remove on_cool_down
+execute as @a[scores={cool_down_time=1..}] run function gun:update/cooldown_time
 
 
 
@@ -38,8 +38,7 @@ execute as @a[scores={cool_down_time=0}] run tag @s remove on_cool_down
 
 ###### Store Each Playerr UUID AND SCAN ######
 
-execute as @a unless entity @s[scores={uuid_1=-1000000000..1000000000}] store result score @s uuid_1 run data get entity @s UUID[0]
-
+execute as @a unless score @s uuid_1 matches -2147483648..2147483647 store result score @s uuid_1 run data get entity @s UUID[0]
 
 
 
@@ -50,9 +49,12 @@ execute as @a unless entity @s[scores={uuid_1=-1000000000..1000000000}] store re
 
 #execute as @e[tag=tank] run function gun:tick/crate_items/tank
 #
-#execute as @e[tag=plane] run function gun:tick/crate_items/plane
+
 #
+
 #scoreboard players reset @a[scores={use_vehicle=1..}] use_vehicle
+
+
 #execute as @a[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick"}]},nbt=!{RootVehicle:{Entity:{Tags:["vehicle"]}}}] run clear @s minecraft:warped_fungus_on_a_stick{Vehicle:1b}
 #execute as @e[type=item,nbt={Item:{tag:{Vehicle:1b}}}] run kill @s
 #

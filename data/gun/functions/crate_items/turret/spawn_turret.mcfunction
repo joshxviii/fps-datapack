@@ -1,0 +1,5 @@
+tp @s[type=armor_stand] ~ ~ ~ ~180 ~
+
+execute if entity @s at @s run summon minecraft:item_display ~ ~ ~ {Tags:["turret","turret_2"],view_range:420,item_display:"head",item:{id:"minecraft:armor_stand",Count:1b,tag:{CustomModelData:301}},Rotation:[0.0f,0.0f],Passengers:[{id:"item_display",shadow_radius:1,shadow_strength:.8,Tags:["turret","turret_2"],view_range:420,item_display:"head",item:{id:"minecraft:armor_stand",Count:1b,tag:{CustomModelData:302}},Rotation:[0.0f,0.0f]}]}
+execute if entity @s at @s run summon minecraft:llama ~ ~ ~ {DeathTime:18s,DeathLootTable:"gun:entities/turret",Variant:1,NoAI:1b,NoGravity:1b,Tags:["turret","turret_2",vehicle],Health:40.0f,Attributes:[{Name:"generic.max_health",Base:40},{Name:"generic.movementSpeed",Base:0f}],Silent:1b,Invulnerable:0b,ActiveEffects:[{Id:14,Amplifier:0,Duration:2147483647,ShowParticles:false}]}
+kill @s

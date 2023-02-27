@@ -1,7 +1,14 @@
-execute if entity @s[nbt=!{SelectedItem:{tag:{Blaster:1b}}}] positioned ^ ^-.25 ^-.25 run particle minecraft:bubble_pop ~ ~ ~ 0 0 0 0 0 force
-execute positioned ^ ^ ^-1.25 run particle minecraft:flash ~ ~ ~ 0 0 0 0 0 force
+execute if entity @s[tag=aimming] unless entity @s[nbt={SelectedItem:{tag:{Blaster:1b}}}] unless entity @s[tag=on_plane] positioned ^ ^-.25 ^1.1 run particle minecraft:bubble_pop ~ ~ ~ 0 0 0 0 0 force
+execute unless entity @s[tag=aimming] unless entity @s[nbt={SelectedItem:{tag:{Blaster:1b}}}] unless entity @s[tag=on_plane] positioned ^-.3 ^-.25 ^1.1 run particle minecraft:bubble_pop ~ ~ ~ 0 0 0 0 0 force
+execute positioned ^ ^ ^1.25 run particle minecraft:flash ~ ~ ~ 0 0 0 0 0 force
 
-execute if entity @s[tag=has_shotgun] positioned ^ ^-.25 ^-.25 run particle minecraft:bubble_pop ~ ~ ~ 0.125 0.125 0.125 0 5 force
+execute if entity @s[tag=aimming] if entity @s[tag=has_shotgun] positioned ^ ^-.25 ^1.1 run particle minecraft:bubble_pop ~ ~ ~ 0.125 0.125 0.125 0 5 force
+execute unless entity @s[tag=aimming] if entity @s[tag=has_shotgun] positioned ^-.3 ^-.25 ^1.1 run particle minecraft:bubble_pop ~ ~ ~ 0.125 0.125 0.125 0 5 force
+
+execute if entity @s[tag=on_plane] at @e[type=donkey,tag=plane_1,sort=nearest,limit=1] positioned ^1 ^1.3 ^1 run particle minecraft:bubble_pop ~ ~ ~ 0.125 0.125 0.125 0 5 force
+execute if entity @s[tag=on_plane] at @e[type=donkey,tag=plane_1,sort=nearest,limit=1] positioned ^-1 ^1.3 ^1 run particle minecraft:bubble_pop ~ ~ ~ 0.125 0.125 0.125 0 5 force
+
+
 execute if entity @s[tag=has_rpg] positioned ^ ^-.25 ^-.25 run particle minecraft:bubble_pop ~ ~ ~ 0.15 0.15 0.15 0 5 force
 execute if entity @s[tag=has_rpg] positioned ^ ^-.25 ^-.25 run particle minecraft:large_smoke ~ ~ ~ 0.125 0.125 0.125 0 2 force
 
@@ -18,6 +25,7 @@ execute if entity @s[tag=has_sniper] positioned ^ ^ ^ run playsound minecraft:gu
 execute if entity @s[tag=has_m13] positioned ^ ^ ^ run playsound minecraft:gun.fire_fast player @a[distance=..40] ^ ^ ^.1 3 1.8 1
 execute if entity @s[tag=has_rpg] positioned ^ ^ ^ run playsound minecraft:gun.launch player @a[distance=..40] ^ ^ ^.1 2 .8 1
 execute if entity @s[tag=tank_aim_dir] positioned ^ ^ ^ run playsound minecraft:tank.fire_close player @a[distance=..40] ^ ^ ^.1 4 1 1
+execute if entity @s[tag=on_plane] positioned ^ ^ ^ run playsound minecraft:gun.fire_fast player @a[distance=..50] ^ ^ ^.1 3 .5 1
 
 
 execute if entity @s[tag=has_pistol] positioned ^ ^ ^ run playsound minecraft:gun.fire_small_far player @a[distance=30..200] ^ ^ ^6 8 1.3 0
@@ -28,6 +36,7 @@ execute if entity @s[tag=has_sniper] positioned ^ ^ ^ run playsound minecraft:gu
 execute if entity @s[tag=has_m13] positioned ^ ^ ^ run playsound minecraft:gun.fire_small_far player @a[distance=30..250] ^ ^ ^6 8 2 0
 execute if entity @s[tag=has_rpg] positioned ^ ^ ^ run playsound minecraft:tank.fire_far player @a[distance=30..250] ^ ^ ^6 8 2 0
 execute if entity @s[tag=tank_aim_dir] positioned ^ ^ ^ run playsound minecraft:tank.fire_far player @a[distance=65..300] ^ ^ ^6 9.75 1 0
+execute if entity @s[tag=on_plane] positioned ^ ^ ^ run playsound minecraft:gun.fire_small_far player @a[distance=65..300] ^ ^ ^6 9.75 .6 .1
 
 
 
@@ -42,15 +51,20 @@ execute if entity @s[nbt={SelectedItem:{tag:{Projectile:1b}}}] run tp @e[type=mi
 execute if entity @s[nbt={SelectedItem:{tag:{Projectile:1b}}}] run scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=projectile,limit=1,sort=nearest] uuid_1 = @s uuid_1
 execute if entity @s[nbt={SelectedItem:{tag:{Projectile:1b}}}] run scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=projectile,limit=1,sort=nearest] damage = @s damage
 
+execute if entity @s[tag=has_shotgun] rotated ~4.5 ~-3.5 run function gun:update/fire_start_check
+execute if entity @s[tag=has_shotgun] rotated ~4.5 ~3.5 run function gun:update/fire_start_check
+execute if entity @s[tag=has_shotgun] rotated ~-4.5 ~-3.5 run function gun:update/fire_start_check
+execute if entity @s[tag=has_shotgun] rotated ~-4.5 ~3.5 run function gun:update/fire_start_check
+
+execute if entity @s[tag=on_plane] positioned ^.2 ^ ^ run function gun:update/fire_start_check
+execute if entity @s[tag=on_plane] positioned ^-.2 ^ ^ run function gun:update/fire_start_check
+
 
 execute if entity @s[tag=has_projectile] run function gun:update/fire_projectile
 
-execute if entity @s[tag=!has_projectile] run function gun:update/fire
+execute if entity @s[tag=!has_projectile,tag=!on_plane] run function gun:update/fire_start_check
 
-execute if entity @s[tag=has_shotgun] rotated ~4.5 ~-3.5 run function gun:update/fire
-execute if entity @s[tag=has_shotgun] rotated ~4.5 ~3.5 run function gun:update/fire
-execute if entity @s[tag=has_shotgun] rotated ~-4.5 ~-3.5 run function gun:update/fire
-execute if entity @s[tag=has_shotgun] rotated ~-4.5 ~3.5 run function gun:update/fire
+
 
 
 

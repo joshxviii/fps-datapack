@@ -12,12 +12,15 @@ execute if entity @s[tag=claimed_blue,tag=point_b] run tellraw @a[team=blue_team
 execute if entity @s[tag=claimed_blue,tag=point_c] run tellraw @a[team=blue_team] ["",{"text":"Point C","color":"white","bold":"true"},{"text":" has been lost... ","color":"white"}]
 
 
-execute if entity @s[tag=point_a] run team modify point_a color gray
-execute if entity @s[tag=point_b] run team modify point_b color gray
-execute if entity @s[tag=point_c] run team modify point_c color gray
+execute if entity @s[tag=point_a] run team modify line.5 suffix [{"translate":"space.-75"},{"translate":"space.-58"},{"bold":true,"color":"white","text":"[Point A]"}]
+execute if entity @s[tag=point_b] run team modify line.7 suffix [{"translate":"space.-75"},{"translate":"space.-58"},{"bold":true,"color":"white","text":"[Point B]"}]
+execute if entity @s[tag=point_c] run team modify line.9 suffix [{"translate":"space.-75"},{"translate":"space.-58"},{"bold":true,"color":"white","text":"[Point C]"}]
 
+execute if entity @s[tag=point_a] as @e[type=minecraft:text_display,tag=sonar_3,sort=nearest,limit=1] run data modify entity @s text set value '{"bold":"true","color":"white","text":"A"}'
+execute if entity @s[tag=point_b] as @e[type=minecraft:text_display,tag=sonar_3,sort=nearest,limit=1] run data modify entity @s text set value '{"bold":"true","color":"white","text":"B"}'
+execute if entity @s[tag=point_c] as @e[type=minecraft:text_display,tag=sonar_3,sort=nearest,limit=1] run data modify entity @s text set value '{"bold":"true","color":"white","text":"C"}'
 
-team leave @e[type=minecraft:ender_pearl,tag=sonar_3,limit=1,sort=nearest]
+team leave @e[type=minecraft:text_display,tag=sonar_3,limit=1,sort=nearest]
 
 execute as @a at @s run playsound minecraft:sonar_claim player @s ~ ~ ~
 fill ~ ~ ~ ~ ~ ~ minecraft:light_gray_concrete replace

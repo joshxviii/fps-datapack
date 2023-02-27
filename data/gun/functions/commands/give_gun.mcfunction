@@ -19,7 +19,7 @@ give @p minecraft:armor_stand{CustomModelData:300,EntityTag:{Marker:1b,Small:1b,
 give @p minecraft:armor_stand{CustomModelData:300,EntityTag:{Marker:1b,Small:1b,Invisible:1b,Tags:["motorcycle","spawn_motorcycle"],DisabledSlots:2039575,Invisible:1b,Silent:1b,Invulnerable:1b},display:{Name:'[{"text":"Motorcycle Crate","italic":"false","color":"white"}]'}} 16
 give @p minecraft:armor_stand{CustomModelData:300,EntityTag:{Marker:1b,Small:1b,Invisible:1b,Tags:["turret","spawn_turret"],DisabledSlots:2039575,Invisible:1b,Silent:1b,Invulnerable:1b},display:{Name:'[{"text":"Turret Crate","italic":"false","color":"white"}]'}} 16
 give @p minecraft:armor_stand{CustomModelData:300,EntityTag:{Marker:1b,Small:1b,Invisible:1b,NoAI:1b,NoGravity:1b,Tags:["spawn_sonar","sonar"],DisabledSlots:2039575,Silent:1b,Invulnerable:1b},display:{Name:'[{"text":"Sonar Crate","italic":"false","color":"white"}]'}} 16
-give @p minecraft:armor_stand{CustomModelData:300,EntityTag:{Marker:1b,Small:1b,Invisible:0b,NoAI:1b,NoGravity:1b,Tags:["spawn_plane","plane"],DisabledSlots:2039575,Silent:1b,Invulnerable:1b},display:{Name:'[{"text":"Plane Crate","italic":"false","color":"white"}]'}} 16
+give @p minecraft:armor_stand{CustomModelData:300,EntityTag:{Marker:1b,Small:1b,Invisible:1b,NoAI:1b,NoGravity:1b,Tags:["spawn_plane","crate_spawn"],DisabledSlots:2039575,Silent:1b,Invulnerable:1b},display:{Name:'[{"text":"Plane Crate","italic":"false","color":"white"}]'}} 16
 give @p minecraft:armor_stand{CustomModelData:300,EntityTag:{Marker:1b,Small:1b,Tags:["tank_con","tank","spawn_tank"],DisabledSlots:2039575,Invisible:1b,Silent:1b,Invulnerable:1b},display:{Name:'[{"text":"Tank Crate","italic":"false","color":"white"}]'}} 16
 
 

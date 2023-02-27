@@ -1,0 +1,4 @@
+{
+  "function": "set_nbt",
+  "tag": "{Enchantments:[{lvl:1s,id:\"minecraft:binding_curse\"}]}"
+}

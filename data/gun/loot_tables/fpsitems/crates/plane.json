@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:armor_stand",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:300,HideFlags:16,CanPlaceOn:[\"#gun:can_place_crate\"],EntityTag:{Marker:1b,Small:1b,Invisible:1b,NoAI:1b,NoGravity:1b,Tags:[\"spawn_plane\",\"crate_spawn\"],DisabledSlots:2039575,Silent:1b,Invulnerable:1b},display:{Name:'[{\"text\":\"Plane Crate\",\"italic\":false,\"color\":\"white\"}]'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

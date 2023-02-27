@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "player": {},
+        "item": {
+          "durability": 0,
+          "nbt": "{Gun:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "gun:update/used_gun_empty_check"
+  }
+}

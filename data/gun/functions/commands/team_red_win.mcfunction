@@ -8,6 +8,3 @@ execute as @a[team=red_team] at @s run playsound minecraft:ui.toast.challenge_co
 execute as @a[team=blue_team] at @s run playsound minecraft:entity.ender_dragon.growl player @s ~ ~ ~ 1000 .6
 
 tellraw @a ["",{"text":"Red Team","color":"red","bold":"true"},{"text":" has won.","color":"yellow"}]
-
-function fpscraft:gamemodes/end_capture_point
-function gun:commands/game_end

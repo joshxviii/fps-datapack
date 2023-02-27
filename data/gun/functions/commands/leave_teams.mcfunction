@@ -1,2 +1,2 @@
-team leave @s
-scoreboard players set @s team 0
+team leave @a
+scoreboard players set @a team 0

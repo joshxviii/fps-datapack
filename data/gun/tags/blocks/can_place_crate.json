@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#valid_spawn",
+    "#mineable/axe",
+    "#mineable/hoe",
+    "#mineable/pickaxe",
+    "#mineable/shovel",
+    "#gun:shot_past"
+  ]
+}

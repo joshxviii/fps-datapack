@@ -1,4 +1,4 @@
 {
   "function": "set_nbt",
-  "tag": "{Aim:0b,CustomModelData:104,AttributeModifiers:[{}]}"
+  "tag": "{Aim:0b,CustomModelData:2104,AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-10.0,Operation:0,UUID:[I;11,11,11,11]}]}"
 }

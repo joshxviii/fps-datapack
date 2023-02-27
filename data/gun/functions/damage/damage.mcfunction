@@ -1,4 +1,5 @@
 
+
 scoreboard players operation @s def_shot = @s def
 scoreboard players operation @s def_shot *= 3 3
 scoreboard players operation @s def_shot *= @s p_damage
@@ -6,61 +7,57 @@ scoreboard players operation @s p_damage *= 100 100
 scoreboard players operation @s p_damage -= @s def_shot
 scoreboard players operation @s p_damage /= 100 100
 
+execute store result score @s health run data get entity @s Health
 
-execute if score @s p_damage >= @s health run function gun:damage/damage_death
+execute if score @s p_damage >= @s health if entity @s[gamemode=!creative,gamemode=!spectator] run function gun:damage/damage_death
 
-#tellraw @s ["",{"text":"p damage = ","color":"aqua"},{"score":{"name":"@s","objective":"p_damage"}}]
-#tellraw @s ["",{"text":"health = ","color":"red"},{"score":{"name":"@s","objective":"health"}}]
+#execute as @s run tellraw @a ["",{"text":"Pending Damage: "},{"score":{"name":"@s","objective":"p_damage"}}]
+#execute as @s run tellraw @a ["",{"text":"Health: "},{"score":{"name":"@s","objective":"health"}}]
 
-execute store result score .temp p_damage run data get entity @s Health
-execute unless score @s return_hp matches 1.. store result score @s return_hp run attribute @s minecraft:generic.max_health base get
-scoreboard players operation .temp p_damage -= @s p_damage
+
+
+execute if score @s p_damage matches 1 run damage @s 1 gun:bullet
+execute if score @s p_damage matches 2 run damage @s 2 gun:bullet
+execute if score @s p_damage matches 3 run damage @s 3 gun:bullet
+execute if score @s p_damage matches 4 run damage @s 4 gun:bullet
+execute if score @s p_damage matches 5 run damage @s 5 gun:bullet
+execute if score @s p_damage matches 6 run damage @s 6 gun:bullet
+execute if score @s p_damage matches 7 run damage @s 7 gun:bullet
+execute if score @s p_damage matches 8 run damage @s 8 gun:bullet
+execute if score @s p_damage matches 9 run damage @s 9 gun:bullet
+execute if score @s p_damage matches 10 run damage @s 10 gun:bullet
+execute if score @s p_damage matches 11 run damage @s 11 gun:bullet
+execute if score @s p_damage matches 12 run damage @s 12 gun:bullet
+execute if score @s p_damage matches 13 run damage @s 13 gun:bullet
+execute if score @s p_damage matches 14 run damage @s 14 gun:bullet
+execute if score @s p_damage matches 15 run damage @s 15 gun:bullet
+execute if score @s p_damage matches 16 run damage @s 16 gun:bullet
+execute if score @s p_damage matches 17 run damage @s 17 gun:bullet
+execute if score @s p_damage matches 18 run damage @s 18 gun:bullet
+execute if score @s p_damage matches 19 run damage @s 19 gun:bullet
+execute if score @s p_damage matches 20 run damage @s 20 gun:bullet
+execute if score @s p_damage matches 21 run damage @s 21 gun:bullet
+execute if score @s p_damage matches 22 run damage @s 22 gun:bullet
+execute if score @s p_damage matches 23 run damage @s 23 gun:bullet
+execute if score @s p_damage matches 24 run damage @s 24 gun:bullet
+execute if score @s p_damage matches 25 run damage @s 25 gun:bullet
+execute if score @s p_damage matches 26 run damage @s 26 gun:bullet
+execute if score @s p_damage matches 27 run damage @s 27 gun:bullet
+execute if score @s p_damage matches 28 run damage @s 28 gun:bullet
+execute if score @s p_damage matches 29 run damage @s 29 gun:bullet
+execute if score @s p_damage matches 30 run damage @s 30 gun:bullet
+execute if score @s p_damage matches 31 run damage @s 31 gun:bullet
+execute if score @s p_damage matches 32 run damage @s 32 gun:bullet
+execute if score @s p_damage matches 33 run damage @s 33 gun:bullet
+execute if score @s p_damage matches 34 run damage @s 34 gun:bullet
+execute if score @s p_damage matches 35 run damage @s 35 gun:bullet
+execute if score @s p_damage matches 36 run damage @s 36 gun:bullet
+execute if score @s p_damage matches 37 run damage @s 37 gun:bullet
+execute if score @s p_damage matches 38 run damage @s 38 gun:bullet
+execute if score @s p_damage matches 39 run damage @s 39 gun:bullet
+execute if score @s p_damage matches 40 run damage @s 40 gun:bullet
+
 scoreboard players reset @s p_damage
-
-
-
-
-execute if score .temp p_damage matches 1 run damage @s 1 gun:bullet by @s from @s
-execute if score .temp p_damage matches 2 run damage @s 2 gun:bullet by @s from @s
-execute if score .temp p_damage matches 3 run damage @s 3 gun:bullet by @s from @s
-execute if score .temp p_damage matches 4 run damage @s 4 gun:bullet by @s from @s
-execute if score .temp p_damage matches 5 run damage @s 5 gun:bullet by @s from @s
-execute if score .temp p_damage matches 6 run damage @s 6 gun:bullet by @s from @s
-execute if score .temp p_damage matches 7 run damage @s 7 gun:bullet by @s from @s
-execute if score .temp p_damage matches 8 run damage @s 8 gun:bullet by @s from @s
-execute if score .temp p_damage matches 9 run damage @s 9 gun:bullet by @s from @s
-execute if score .temp p_damage matches 10 run damage @s 10 gun:bullet by @s from @s
-execute if score .temp p_damage matches 11 run damage @s 11 gun:bullet by @s from @s
-execute if score .temp p_damage matches 12 run damage @s 12 gun:bullet by @s from @s
-execute if score .temp p_damage matches 13 run damage @s 13 gun:bullet by @s from @s
-execute if score .temp p_damage matches 14 run damage @s 14 gun:bullet by @s from @s
-execute if score .temp p_damage matches 15 run damage @s 15 gun:bullet by @s from @s
-execute if score .temp p_damage matches 16 run damage @s 16 gun:bullet by @s from @s
-execute if score .temp p_damage matches 17 run damage @s 17 gun:bullet by @s from @s
-execute if score .temp p_damage matches 18 run damage @s 18 gun:bullet by @s from @s
-execute if score .temp p_damage matches 19 run damage @s 19 gun:bullet by @s from @s
-execute if score .temp p_damage matches 20 run damage @s 20 gun:bullet by @s from @s
-execute if score .temp p_damage matches 21 run damage @s 21 gun:bullet by @s from @s
-execute if score .temp p_damage matches 22 run damage @s 22 gun:bullet by @s from @s
-execute if score .temp p_damage matches 23 run damage @s 23 gun:bullet by @s from @s
-execute if score .temp p_damage matches 24 run damage @s 24 gun:bullet by @s from @s
-execute if score .temp p_damage matches 25 run damage @s 25 gun:bullet by @s from @s
-execute if score .temp p_damage matches 26 run damage @s 26 gun:bullet by @s from @s
-execute if score .temp p_damage matches 27 run damage @s 27 gun:bullet by @s from @s
-execute if score .temp p_damage matches 28 run damage @s 28 gun:bullet by @s from @s
-execute if score .temp p_damage matches 29 run damage @s 29 gun:bullet by @s from @s
-execute if score .temp p_damage matches 30 run damage @s 30 gun:bullet by @s from @s
-execute if score .temp p_damage matches 31 run damage @s 31 gun:bullet by @s from @s
-execute if score .temp p_damage matches 32 run damage @s 32 gun:bullet by @s from @s
-execute if score .temp p_damage matches 33 run damage @s 33 gun:bullet by @s from @s
-execute if score .temp p_damage matches 34 run damage @s 34 gun:bullet by @s from @s
-execute if score .temp p_damage matches 35 run damage @s 35 gun:bullet by @s from @s
-execute if score .temp p_damage matches 36 run damage @s 36 gun:bullet by @s from @s
-execute if score .temp p_damage matches 37 run damage @s 37 gun:bullet by @s from @s
-execute if score .temp p_damage matches 38 run damage @s 38 gun:bullet by @s from @s
-execute if score .temp p_damage matches 39 run damage @s 39 gun:bullet by @s from @s
-execute if score .temp p_damage matches 40 run damage @s 40 gun:bullet by @s from @s
-
 
 
 

@@ -27,3 +27,6 @@ tag @s[nbt={SelectedItem:{tag:{weapon_type:"RPG"}}}] add has_rpg
 
 tag @s[nbt=!{SelectedItem:{tag:{weapon_type:"Gernade"}}}] remove has_gernade
 tag @s[nbt={SelectedItem:{tag:{weapon_type:"Gernade"}}}] add has_gernade
+
+tag @s[nbt=!{RootVehicle:{Entity:{Tags:["plane"]}}}] remove on_plane
+tag @s[nbt={RootVehicle:{Entity:{Tags:["plane"]}}}] add on_plane

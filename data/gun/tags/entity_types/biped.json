@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+	"player",
+	"zombie",
+	"zombie_villager",
+	"husk",
+	"skeleton",
+	"stray"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "asset_name": "natural_2",
+  "description": {
+    "color": "#FFFFFF",
+    "translate": "trim_material.gun.natural_2"
+  },
+  "ingredient": "minecraft:book",
+  "item_model_index": 0.8
+}

@@ -1,4 +1,4 @@
 {
   "function": "set_nbt",
-  "tag": "{Charged:1b,Damage:0,ChargedProjectiles:[{Ammo:1b}]}"
+  "tag": "{Unbreakable:0b,Charged:1b,Damage:0,ChargedProjectiles:[{Ammo:1b}]}"
 }

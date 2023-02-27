@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:fishing_rod",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{weapon_type:\"Grapple\",Unbreakable:1b,HideFlags:31,CustomModelData:100,display:{Name:'[{\"text\":\"Grappling Hook\",\"italic\":false,\"color\":\"white\"}]',Lore:['[{\"text\":\"\"}]','[{\"text\":\"When in Main Hand:\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\" 10 Attack Damage\",\"italic\":false,\"color\":\"dark_green\"}]','[{\"text\":\" 2 Attack Speed\",\"italic\":false,\"color\":\"dark_green\"}]']}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

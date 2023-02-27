@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "player": [],
+        "entity": {
+          "type": "minecraft:armor_stand",
+          "nbt": "{Tags:[\"grapple_ride\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "gun:tick/used_hook"
+  }
+}

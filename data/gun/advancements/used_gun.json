@@ -1,7 +1,13 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:shot_crossbow"
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "player": {},
+        "item": {
+          "nbt": "{Gun:1b}"
+        }
+      }
     }
   },
   "rewards": {

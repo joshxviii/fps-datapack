@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+	"iron_bars",
+	"#logs",
+	"#fences",
+	"#leaves",
+	"#walls",
+	"#minecraft:climbable",
+	"#gun:alldoors",
+	"#gun:hideable"
+  ]
+}
